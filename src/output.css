@@ -437,6 +437,16 @@
   .overflow-y-scroll {
     overflow-y: scroll;
   }
+  /* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
   .rounded {
     border-radius: 0.25rem;
   }
